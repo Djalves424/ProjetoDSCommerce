@@ -90,6 +90,10 @@ public class User implements UserDetails {
         return password;
     }
 
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return roles;
@@ -118,10 +122,7 @@ public class User implements UserDetails {
     @Override
     public boolean isEnabled() {
         return true;
-    }
 
-    public void setPassword(String password) {
-        this.password = password;
     }
 
     public List<Order> getOrders() {
