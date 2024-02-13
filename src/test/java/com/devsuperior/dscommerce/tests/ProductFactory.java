@@ -14,7 +14,7 @@ public class ProductFactory {
 
     public static Product createProduct(String name) {
         Product product = createProduct();
-        product.getName();
+        product.setName(name);
         return product;
     }
 }
