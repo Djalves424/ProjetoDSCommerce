@@ -85,6 +85,8 @@
                         <exclude>com/devsuperior/dscommerce/dto/**</exclude>
                         <exclude>com/devsuperior/dscommerce/controllers/handlers/**</exclude>
                         <exclude>com/devsuperior/dscommerce/services/exceptions/**</exclude>
+                        <exclude>com/devsuperior/dscommerce/util/**</exclude>
+                        <exclude>com/devsuperior/dscommerce/controllers/**</exclude>
                     </excludes>
                 </configuration>
                 <executions>
