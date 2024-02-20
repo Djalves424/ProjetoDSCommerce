@@ -15,7 +15,7 @@ public class ProductDTO {
     @NotBlank(message = "Campo requerido")
     private String name;
 
-    @Size(min = 10, message = "Descrição precisa ter no mínimo 10 caravteres")
+    @Size(min = 10, message = "Descrição precisa ter no mínimo 10 caracteres")
     @NotBlank(message = "Campo requerido")
     private String description;
 
