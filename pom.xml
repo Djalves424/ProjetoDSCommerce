@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.1.0</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <version>3.1.2</version>
+        <relativePath /> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.devsuperior</groupId>
     <artifactId>dscommerce</artifactId>
@@ -40,12 +41,23 @@
         <dependency>
             <groupId>jakarta.validation</groupId>
             <artifactId>jakarta.validation-api</artifactId>
-            <version>3.0.2</version>
+            <version>3.0.2</version><!--$NO-MVN-MAN-VER$-->
         </dependency>
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-validator</artifactId>
             <version>8.0.0.CR2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-test</artifactId>
+            <scope>test</scope>
         </dependency>
 
         <dependency>
@@ -58,19 +70,20 @@
             <artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-oauth2-authorization-server</artifactId>
-        </dependency>
-
     </dependencies>
 
     <build>
         <plugins>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
                 <version>3.1.0</version> <!--$NO-MVN-MAN-VER$ -->
+            </plugin>
+
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
 
             <plugin>
@@ -79,16 +92,18 @@
                 <version>0.8.7</version>
                 <configuration>
                     <excludes>
-                        <exclude>com/devsuperior/dscommerce/DscommerceApplication.class</exclude>
-                        <exclude>com/devsuperior/dscommerce/config/**</exclude>
-                        <exclude>com/devsuperior/dscommerce/entities/**</exclude>
-                        <exclude>com/devsuperior/dscommerce/dto/**</exclude>
-                        <exclude>com/devsuperior/dscommerce/controllers/handlers/**</exclude>
-                        <exclude>com/devsuperior/dscommerce/services/exceptions/**</exclude>
-                        <exclude>com/devsuperior/dscommerce/util/**</exclude>
-                        <exclude>com/devsuperior/dscommerce/controllers/**</exclude>
+                        <exclude>com/victoroliveira/dscommerce/DscommerceApplication.class</exclude>
+                        <exclude>com/victoroliveira/dscommerce/config/**</exclude>
+                        <exclude>com/victoroliveira/dscommerce/entities/**</exclude>
+                        <exclude>com/victoroliveira/dscommerce/dto/**</exclude>
+                        <exclude>com/victoroliveira/dscommerce/controllers/**</exclude>
+                        <exclude>com/victoroliveira/dscommerce/controllers/handlers/**</exclude>
+                        <exclude>com/victoroliveira/dscommerce/services/exceptions/**</exclude>
+                        <exclude>com/victoroliveira/dscommerce/util/**</exclude>
+
                     </excludes>
                 </configuration>
+
                 <executions>
                     <execution>
                         <goals>
@@ -106,10 +121,6 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </build>
