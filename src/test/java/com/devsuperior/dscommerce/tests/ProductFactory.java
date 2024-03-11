@@ -7,7 +7,7 @@ public class ProductFactory {
 
     public static Product createProduct() {
         Category category = CategoryFactory.createCategory();
-        Product product = new Product(1L, "Console PlayStation 5", "Lorem ipsum dolor sit amet", 3999.0, "https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/7-big.jpg");
+        Product product = new Product(1L, "Console PlayStation 5", "consectetur adipiscing elit, sed", 3999.0, "https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/1-big.jpg");
         product.getCategories().add(category);
         return product;
     }
