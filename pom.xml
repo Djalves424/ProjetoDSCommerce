@@ -92,14 +92,14 @@
                 <version>0.8.7</version>
                 <configuration>
                     <excludes>
-                        <exclude>com/victoroliveira/dscommerce/DscommerceApplication.class</exclude>
-                        <exclude>com/victoroliveira/dscommerce/config/**</exclude>
-                        <exclude>com/victoroliveira/dscommerce/entities/**</exclude>
-                        <exclude>com/victoroliveira/dscommerce/dto/**</exclude>
-                        <exclude>com/victoroliveira/dscommerce/controllers/**</exclude>
-                        <exclude>com/victoroliveira/dscommerce/controllers/handlers/**</exclude>
-                        <exclude>com/victoroliveira/dscommerce/services/exceptions/**</exclude>
-                        <exclude>com/victoroliveira/dscommerce/util/**</exclude>
+                        <exclude>com/devsuperior/dscommerce/DscommerceApplication.class</exclude>
+                        <exclude>com/devsuperior/dscommerce/config/**</exclude>
+                        <exclude>com/devsuperior/dscommerce/entities/**</exclude>
+                        <exclude>com/devsuperior/dscommerce/dto/**</exclude>
+                        <exclude>com/devsuperior/dscommerce/controllers/**</exclude>
+                        <exclude>com/devsuperior/dscommerce/controllers/handlers/**</exclude>
+                        <exclude>com/devsuperior/dscommerce/services/exceptions/**</exclude>
+                        <exclude>com/devsuperior/dscommerce/util/**</exclude>
 
                     </excludes>
                 </configuration>
